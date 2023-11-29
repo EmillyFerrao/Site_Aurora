@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Oswald:wght@200;300;500;600&family=Pacifico&family=Rammetto+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;1,300&family=Tilt+Neon&family=Young+Serif&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #822a23 ;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+   width: 60%;
+}
+
+ul{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+    
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: Tilt Neon, sans-serif;
+}
+
+li:hover{
+    color: black;
+}
+
+#logo{
+    width: 180px;
+    height: auto;
+}
+
+#banner{
+    background-image: url(./imagens/valkirias-aurora-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 470px;
+}
+
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+    width: 50%
+}
+
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.descricao{
+    color: white;
+    font-size: 19px;
+    font-family: Tilt Neon, sans-serif;
+    width: 90%;
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: #800000;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    
+}
+
+.button:hover{
+    background-color: aliceblue;
+    color: #800000;
+}
+
+.atores-cards-container{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color:white;
+    font-size: 17px;
+    font-family: Tilt Neon, sans-serif;
+}
+
+.banner1{
+    background-image: url('https://i.scdn.co/image/ab6761610000e5eb1cf32251011d049c26855ae4');
+}
+
+.banner2{
+    background-image: url('https://64.media.tumblr.com/38428cfd27c9f868acb01b7f15f46c6c/c826593ab5b29869-5e/s1280x1920/d6f83aec91ce08fd0ee9cfaea5d6c3c87596a10a.jpg');
+}
+
+.banner3{
+    background-image: url('https://i0.wp.com/popnow.com.br/wp-content/uploads/2022/04/FPh-vyHXoAQhJ6N-e1649190056784.jpeg?fit=1078%2C808&ssl=1');
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+footer{
+    height: 200px;
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color:white;
+    font-family: Tilt Neon, sans-serif;
+}
+
+.footer-navegacao{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    
+    align-items: center;
+}
+
+.body-contact{
+    background-image: url('https://riffmagazine.com/wp-content/uploads/2021/12/The_Gods_We_Can_Touch_-_low_res_for_PR-e1640309420842.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+
+}
+.contact-contato{
+   
+    width: 25%;
+    margin: auto;
+    
+   
+}
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+  form input {
+            width: 100%;
+            background-color: #800000a2;
+            border: 0;
+            outline: 0;
+            padding: 20px 15px;
+            border-radius: 15px;
+            font-size: 17px;
+            color: white;
+            height: 22px;
+            font-family: Tilt Neon, sans-serif;
+    }
+    
+    form input::placeholder{
+    color:black;
+    }
+    
+    form textarea{
+        width: 100%;
+        height: 100px;
+        background-color: #800000ad;
+        border: 0;
+        outline: 0;
+        padding: 20px 15px;
+        border-radius: 15px;
+        font-size: 15px;
+        color: black;
+        resize: none;
+    }
+    
+    .btn-enviar{
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    
+    .btn-enviar input[type=submit]{
+       width: 120px;
+       background-color: #610202;
+       color:white;
+       transition: .2s;
+       line-height: 0.4;
+       cursor: pointer;
+    }
+    .btn-enviar:hover{
+        box-shadow: opx opx 8px white;
+        transform: scale(1.05);
+    }
+    .card{
+        width: 107%;
+        height: 280px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 20px 10px;
+        color: #D2B48C;
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+
+     .card:hover {
+        transform: scale(1.02);
+    }
+    
+    #cards-container {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 20px;
+        column-gap: 40px;
+    }
+    .cards-content {
+        width: 330%;
+        display: contents;
+        grid-template-columns: repeat(4,2fr);
+        row-gap: 10px;
+        column-gap: 30px;
+    }
+    
+    .banner1{
+        background-image: url('https://i.pinimg.com/564x/5b/f5/50/5bf550f40482f71cf3570b98c0d9943a.jpg');
+    }
+    .banner-2{
+        background-image: url('https://i.pinimg.com/564x/7e/c3/c3/7ec3c3dc8187c16d9d39fe77ba1bb43d.jpg');
+    }
+    .banner-3{
+        background-image: url('https://i.pinimg.com/564x/9f/e0/6b/9fe06bed158416c3834e35fad3ae803c.jpg');
+    }
+    .banner-4{
+        background-image: url('https://i.pinimg.com/564x/3a/c9/54/3ac954bc957f3cf64f94e8152e61f78a.jpg');
+    }
+    .banner-5{
+        background-image: url('https://i.pinimg.com/564x/39/e7/43/39e7431f7ee388b50295017950965936.jpg');
+    }
+    .banner-6{
+        background-image: url('https://i.pinimg.com/564x/df/3e/59/df3e59b7b3788a74293bec54c9a94970.jpg');
+    }
+    .banner-7{
+        background-image: url('https://i.pinimg.com/564x/48/bc/e3/48bce3a02acab80ecbe32dbc36b625ea.jpg');
+    }
+    .banner-8{
+        background-image: url('https://i.pinimg.com/564x/6d/2b/a5/6d2ba5cffab0f507a754f98188e424e2.jpg');
+    }
+    .banner-9{
+        background-image: url('https://i.pinimg.com/564x/49/08/ef/4908ef3bb7c28acd8f9675305d403629.jpg');
+    }
+
+    .img-comment{
+        width:17%;
+        height: 120px;
+        border-radius: 60px;
+    }
+
+    .text{
+        display: flex;
+    }
+
+    .name{
+        display:flex;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    p{
+        display: flex;
+    }
+    
+    .comment{
+        display: flex;
+        background-color:#610202;
+        padding: 10px 10px;
+        margin-bottom: 2px;
+        border-radius: 10px;
+        font-family: Tilt Neon, sans-serif;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6%;
+    }
+
+    .comment-box{
+        border-radius: 100px;
+        width: 80%;
+        height: 40px;
+    }
+
+    .comentarios{
+            width: 50%;
+            margin: 0 auto;
+            text-align: left;
+            border-radius: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .footer-navegacao{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    #banner{
+        background-position: 40%;
+    }
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer{
+        width: 100%;
+    }
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .descricao{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards-content{
+        grid-template-columns: 1fr;
+    }
+}
